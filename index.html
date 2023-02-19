@@ -196,6 +196,7 @@
 				</div>
 			</div>
 		</section>
+		<!-- end about -->
 
 		<!-- portfolio -->
 		<section
@@ -299,6 +300,7 @@
 				</div>
 			</div>
 		</section>
+		<!-- end protfolio -->
 
 		<!-- parallax -->
 		<section class="parallax">
@@ -343,6 +345,7 @@
             </div>
         </div> -->
 		</section>
+		<!-- end parallax -->
 
 		<!-- contact us -->
 		<section
@@ -371,20 +374,41 @@
 							<li class="list-group-item">South Jakarta, Indonesia</li>
 							<!-- <li class="list-group-item">Indonesia</li> -->
 							<a href="https://yogiesugandi.github.io/yogisugandi/">
-								<li class="list-group-item">Download My Resume <i class="fas fa-download"></i></li>
+								<li
+									class="list-group-item"
+									style="color: black"
+								>
+									<i class="fas fa-download"></i> Download My Resume
+								</li>
 							</a>
 						</ul>
 						<br />
 						<div id="sendmessage">Your message has been sent. Thank you!</div>
 						<div id="errormessage"></div>
 					</div>
+
 					<div class="col-lg-6 col-sm-12 animate__animated animate__fadeInRight mb-5">
-						<form
+						<div
+							class="alert alert-success alert-dismissible fade show my-alert d-none"
+							role="alert"
+						>
+							<strong>Thank you!</strong> Your data has been successfully saved.
+							<button
+								type="button"
+								class="close"
+								data-dismiss="alert"
+								aria-label="Close"
+							>
+								<span aria-hidden="true">&times;</span>
+							</button>
+						</div>
+						<form name="my-web-contact">
+							<!-- untuk pakai PHP
 							action="contactform/contactform.php"
 							method="post"
 							class="contactForm"
-							role="form"
-						>
+							role="form" -->
+
 							<div class="form-group">
 								<label for="name">Name</label>
 								<input
@@ -395,21 +419,28 @@
 									placeholder="Input Your Name"
 									data-rule="minlen:4"
 									data-msg="Please enter at least 4 chars"
+									required
 								/>
-								<div class="validation"></div>
+								<!-- <div class="validation"></div> -->
 							</div>
 							<div class="form-group">
-								<label for="email">Email</label>
+								<label
+									for="email"
+									class="form-lable"
+									>Email</label
+								>
 								<input
-									type="email"
+									type="email	"
 									class="form-control"
 									name="email"
-									id="email"
 									placeholder="Input Your Email"
+									id="email"
+									aria-describedby="emailHelp"
 									data-rule="email"
 									data-msg="Please enter a valid email"
+									required
 								/>
-								<div class="validation"></div>
+								<!-- <div class="validation"></div> -->
 							</div>
 							<div class="form-group">
 								<label for="phone">Phone Number</label>
@@ -422,7 +453,7 @@
 									data-rule="minlen:4"
 									data-msg="Please enter at least 12 chars of phone"
 								/>
-								<div class="validation"></div>
+								<!-- <div class="validation"></div> -->
 							</div>
 							<div class="form-group">
 								<label for="message">Message</label>
@@ -433,15 +464,28 @@
 									placeholder="Input Your Message"
 									data-rule="required"
 									data-msg="Please write something for us"
+									required
 								></textarea>
-								<div class="validation"></div>
+								<!-- <div class="validation"></div> -->
 							</div>
 							<div class="form-group">
 								<button
 									type="submit"
-									class="btn btn-primary"
+									class="btn btn-warning btn-kirim"
 								>
 									Send
+								</button>
+								<button
+									class="btn btn-warning btn-loading d-none"
+									type="button"
+									disabled
+								>
+									<span
+										class="spinner-grow spinner-grow-sm"
+										role="status"
+										aria-hidden="true"
+									></span>
+									Loading...
 								</button>
 							</div>
 						</form>
@@ -459,6 +503,8 @@
 				></path>
 			</svg>
 		</section>
+		<!-- end contact -->
+
 		<!-- footer -->
 		<footer class="bg-white text-white">
 			<div class="container">
@@ -559,52 +605,34 @@
 			});
 		</script>
 
-		<!--Start of Tawk.to Script
-	<script type="text/javascript">
-		var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-		(function(){
-		var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-		s1.async=true;
-		s1.src='https://embed.tawk.to/5d243f9022d70e36c2a4d22f/default';
-		s1.charset='UTF-8';
-		s1.setAttribute('crossorigin','*');
-		s0.parentNode.insertBefore(s1,s0);
-		})();
-	</script>
-        End of Tawk.to Script-->
-
 		<!-- Option 2: jQuery, Popper.js, and Bootstrap JS
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
     -->
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 		<script>
-			$(document).ready(function () {
-				var d = new Date();
-				var month = new Array();
-				month[0] = 'Januari';
-				month[1] = 'Februari';
-				month[2] = 'Maret';
-				month[3] = 'April';
-				month[4] = 'Mei';
-				month[5] = 'Juni';
-				month[6] = 'Juli';
-				month[7] = 'Agustus';
-				month[8] = 'September';
-				month[9] = 'Oktober';
-				month[10] = 'November';
-				month[11] = 'Desember';
+			const scriptURL = 'https://script.google.com/macros/s/AKfycbyo0Gq29YSe7gIGI5qq1jmOZ0B8ZEWM88Ts2Bvc9KUHTo0ossjz_UCaSOjtVLIjnDuu/exec';
+			const form = document.forms['my-web-contact'];
+			const btnKirim = document.querySelector('.btn-kirim');
+			const btnLoading = document.querySelector('.btn-loading');
+			const myAlert = document.querySelector('.my-alert');
 
-				$('#date').html(d.getDate() + ' ' + month[d.getMonth()] + ' ' + d.getFullYear());
-				$.ajax({
-					url: 'https://api.kawalcorona.com/indonesia/',
-					success: function (result) {
-						$('#positif').html(result[0].positif);
-						$('#sembuh').html(result[0].sembuh);
-						$('#meninggal').html(result[0].meninggal);
-					},
-				});
+			form.addEventListener('submit', (e) => {
+				e.preventDefault();
+				// ketika tombil diklik
+				// Tampilkan tombol loading, hilangkan tombol kirim
+				btnLoading.classList.toggle('d-none');
+				btnKirim.classList.toggle('d-none');
+				fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+					.then((response) => {
+						// Tampilkan tobol kirim, hilangkan tombol loading
+						btnLoading.classList.toggle('d-none');
+						btnKirim.classList.toggle('d-none');
+						myAlert.classList.toggle('d-none');
+						form.reset();
+						console.log('Success!', response);
+					})
+					.catch((error) => console.error('Error!', error.message));
 			});
 		</script>
 	</body>

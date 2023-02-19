@@ -1,7 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 html {
-  position: relative;
+	position: relative;
 }
 
 h1,
@@ -12,250 +12,250 @@ h2,
 h3,
 .form-group,
 .btn {
-  font-family: "Nerko One", cursive !important;
+	font-family: 'Nerko One', cursive !important;
 }
 
 .covid {
-  color: white !important;
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.85);
+	color: white !important;
+	text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.85);
 }
 
 .covid .card h2 {
-  color: white !important;
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.85);
+	color: white !important;
+	text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.85);
 }
 
 .nav-link {
-  font-family: "Nerko One", cursive;
-  color: white !important;
-  font-size: 16px !important;
+	font-family: 'Nerko One', cursive;
+	color: white !important;
+	font-size: 16px !important;
 }
 
 .jumbotron {
-  background-image: url("../img/email-pattern.png");
+	background-image: url('../img/email-pattern.png');
 }
 
 .navbar a {
-  color: white;
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.85);
+	color: white;
+	text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.85);
 }
 
 .navbar-brand {
-  font-family: "Nerko One", cursive;
+	font-family: 'Nerko One', cursive;
 }
 
 .navbar .container .collapse .nav-link a {
-  text-decoration-color: white !important;
+	text-decoration-color: white !important;
 }
 
 section hr {
-  margin: auto;
-  width: 30%;
+	margin: auto;
+	width: 30%;
 }
 
 .about {
-  background: linear-gradient(119deg, rgba(6, 137, 249, 1) 0%, rgba(83, 250, 139, 1) 100%);
+	background: linear-gradient(119deg, rgba(6, 137, 249, 1) 0%, rgba(83, 250, 139, 1) 100%);
 }
 
 .about,
 .contact h1 {
-  color: rgb(253, 253, 253);
-  text-shadow: 1px 1px 3px rgba(7, 7, 7, 0.85);
+	color: rgb(253, 253, 253);
+	text-shadow: 1px 1px 3px rgba(7, 7, 7, 0.85);
 }
 
 .about p {
-  font-size: 20px !important;
-  color: rgb(250, 250, 250) !important;
-  text-shadow: 1px 1px 3px rgba(3, 3, 3, 0.85);
-  text-align: justify;
+	font-size: 20px !important;
+	color: rgb(250, 250, 250) !important;
+	text-shadow: 1px 1px 3px rgba(3, 3, 3, 0.85);
+	text-align: justify;
 }
 
 .contact {
-  background: linear-gradient(119deg, rgba(6, 137, 249, 1) 0%, rgba(83, 250, 139, 1) 100%);
+	background: linear-gradient(119deg, rgba(6, 137, 249, 1) 0%, rgba(83, 250, 139, 1) 100%);
 }
 
 .portfolio {
-  background-image: url("../img/email-pattern.png");
-  height: 680px;
+	background-image: url('../img/email-pattern.png');
+	height: 680px;
 }
 
 .blog h1 {
-  color: rgb(87, 86, 86);
-  text-shadow: 1px 1px 3px rgba(7, 7, 7, 0.85);
+	color: rgb(87, 86, 86);
+	text-shadow: 1px 1px 3px rgba(7, 7, 7, 0.85);
 }
 
 .blog p {
-  font-size: 20px !important;
-  color: rgb(5, 5, 5) !important;
-  text-shadow: 1px 1px 3px rgba(168, 166, 166, 0.85);
-  text-align: justify;
+	font-size: 20px !important;
+	color: rgb(5, 5, 5) !important;
+	text-shadow: 1px 1px 3px rgba(168, 166, 166, 0.85);
+	text-align: justify;
 }
 
 .content p {
-  font-family: "Poppins", sans-serif !important;
-  text-align: justify;
+	font-family: 'Poppins', sans-serif !important;
+	text-align: justify;
 }
 
 .container h1 span.TypeCursor {
-  display: inline-block;
-  background-color: #ccc;
-  margin-left: 0.1rem;
-  width: 3px;
-  animation: blink 1s infinite;
+	display: inline-block;
+	background-color: #ccc;
+	margin-left: 0.1rem;
+	width: 3px;
+	animation: blink 1s infinite;
 }
 .container h1 span.TypeCursor.typing {
-  animation: none;
+	animation: none;
 }
 @keyframes blink {
-  0% {
-    background-color: #ccc;
-  }
-  49% {
-    background-color: #ccc;
-  }
-  50% {
-    background-color: transparent;
-  }
-  99% {
-    background-color: transparent;
-  }
-  100% {
-    background-color: #ccc;
-  }
+	0% {
+		background-color: #ccc;
+	}
+	49% {
+		background-color: #ccc;
+	}
+	50% {
+		background-color: transparent;
+	}
+	99% {
+		background-color: transparent;
+	}
+	100% {
+		background-color: #ccc;
+	}
 }
 @media (max-width: 600px) {
-  .container p {
-    font-size: 2rem;
-  }
-  .portfolio {
-    background-image: url("../img/email-pattern.png");
-    height: 350px;
-  }
-  .parallax {
-    height: 350px;
-  }
-  .content p {
-    font-size: 0.8rem;
-  }
+	.container p {
+		font-size: 2rem;
+	}
+	.portfolio {
+		background-image: url('../img/email-pattern.png');
+		height: 350px;
+	}
+	.parallax {
+		height: 350px;
+	}
+	.content p {
+		font-size: 0.8rem;
+	}
 }
 
 /* carousel */
 .carousel-inner img {
-  width: 100%;
-  height: 100%;
+	width: 100%;
+	height: 100%;
 }
 
 #custCarousel .carousel-indicators {
-  position: static;
-  margin-top: 20px;
+	position: static;
+	margin-top: 20px;
 }
 
 #custCarousel .carousel-indicators > li {
-  width: 100px;
+	width: 100px;
 }
 
 #custCarousel .carousel-indicators li img {
-  display: block;
-  opacity: 0.5;
+	display: block;
+	opacity: 0.5;
 }
 
 #custCarousel .carousel-indicators li.active img {
-  opacity: 1;
+	opacity: 1;
 }
 
 #custCarousel .carousel-indicators li:hover img {
-  opacity: 0.75;
+	opacity: 0.75;
 }
 
 .carousel-item img {
-  width: 80%;
+	width: 80%;
 }
 
 footer .fa-instagram {
-  background: -webkit-linear-gradient(45deg, rgba(240, 148, 51, 1) 0%, rgba(230, 104, 60, 1) 25%, rgba(220, 39, 67, 1) 50%, rgba(204, 35, 102, 1) 75%, rgba(188, 24, 136, 1) 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  text-align: center;
+	background: -webkit-linear-gradient(45deg, rgba(240, 148, 51, 1) 0%, rgba(230, 104, 60, 1) 25%, rgba(220, 39, 67, 1) 50%, rgba(204, 35, 102, 1) 75%, rgba(188, 24, 136, 1) 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	text-align: center;
 }
 
 /* socmed */
 .socmed a,
 i {
-  font-size: 30px;
-  color: black;
+	font-size: 30px;
+	color: black;
 }
 
 .socmed .fa-linkedin:hover {
-  color: #0e76a8;
+	color: #0e76a8;
 }
 
 .socmed .fa-instagram:hover {
-  background: -webkit-linear-gradient(45deg, rgba(240, 148, 51, 1) 0%, rgba(230, 104, 60, 1) 25%, rgba(220, 39, 67, 1) 50%, rgba(204, 35, 102, 1) 75%, rgba(188, 24, 136, 1) 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  text-align: center;
+	background: -webkit-linear-gradient(45deg, rgba(240, 148, 51, 1) 0%, rgba(230, 104, 60, 1) 25%, rgba(220, 39, 67, 1) 50%, rgba(204, 35, 102, 1) 75%, rgba(188, 24, 136, 1) 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	text-align: center;
 }
 
 .socmed .fa-facebook:hover {
-  color: rgb(40, 40, 245);
+	color: rgb(40, 40, 245);
 }
 
 .socmed .fa-twitter:hover {
-  color: rgb(71, 165, 253);
+	color: rgb(71, 165, 253);
 }
 
 .socmed .fa-whatsapp-square:hover {
-  color: #25d366;
+	color: #25d366;
 }
 
 /* parallax */
 
 .parallax {
-  background-image: url("../img/7.jpg");
-  height: 250px;
-  background-size: cover;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-position: center;
-  opacity: 70%;
+	background-image: url('../img/7.jpg');
+	height: 250px;
+	background-size: cover;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-position: center;
+	opacity: 70%;
 }
 
 /* send message */
 #sendmessage {
-  font-family: "Nerko One", cursive !important;
-  color: white;
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.85);
-  border: 1px solid green;
-  display: none;
-  text-align: center;
-  padding: 15px;
-  font-weight: 600;
-  margin-bottom: 15px;
+	font-family: 'Nerko One', cursive !important;
+	color: white;
+	text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.85);
+	border: 1px solid green;
+	display: none;
+	text-align: center;
+	padding: 15px;
+	font-weight: 600;
+	margin-bottom: 15px;
 }
 
 #errormessage {
-  color: red;
-  display: none;
-  border: 1px solid red;
-  text-align: center;
-  padding: 15px;
-  font-weight: 600;
-  margin-bottom: 15px;
+	color: red;
+	display: none;
+	border: 1px solid red;
+	text-align: center;
+	padding: 15px;
+	font-weight: 600;
+	margin-bottom: 15px;
 }
 
 #sendmessage.show,
 #errormessage.show,
 .show {
-  display: block;
+	display: block;
 }
 
 .validation {
-  color: red;
-  text-shadow: 1px 1px 3px rgb(253, 252, 252);
+	color: red;
+	text-shadow: 1px 1px 3px rgb(253, 252, 252);
 }
 
 /* nav scroll */
 .navbar-dark.scrolled {
-  background: #17a2b8;
-  transition: 0.5s ease-in-out;
+	background: #17a2b8;
+	transition: 0.5s ease-in-out;
 }
